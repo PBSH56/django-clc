@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>clc</title>
+	<style type="text/css">
+		.btn{
+			width: 70px;
+			height: 70px;
+			margin: 12px;
+			font-size: 25px;
+			font-weight: bold;
+			color: #ffff;
+			border-radius: 10px 10px 10px 10px; 
+			box-shadow: 3px 3px 3px 3px #ccc;
+			background-color: #3489eb;
+		} 
+		.display{
+			font-size: 25px;
+		}
+	</style>
+</head>
+<body>
+	<center>
+	    <!--Main div for clc-->
+        <div style="width: 35%; height: 540px; margin-left: 32.5%; margin-top: 30px; background-color: #ffdbfa;border-radius: 10px 10px 10px 10px; box-shadow: 0 5px 10px #888888; position: fixed; alignment-baseline: central;">
+   	       <!--Display div -->
+   	         
+   	        <div style="margin-top: 30px;"> 
+                <form name="clc" mathod='get' action='/evl'>
+                    <div style="width: 90%; height: 95px; background-color: #fff;border-radius: 7px 7px 7px 7px; box-shadow: inset 0 0 5px #888888;">
+                       <input class="display" type="text" name="answer" style="margin-top: 5px; color: #717171; border-style: none;" value="{{answer}}">
+                       <p class="display" style="margin-top: 5px; color: black; font-weight: bold;">Answer : {{pop}}</p>
+                    </div>
+
+                     <!-- Input section -->
+
+                     <input class="btn" type="button" value=" 1 " name="1" onclick="answer.value += '1'"/>
+                     <input class="btn" type="button" value=" 2 " name="2" onclick="answer.value += '2'"/>
+                     <input class="btn" type="button" value=" 3 " name="3" onclick="answer.value += '3'"/>
+                     <input class="btn" type="button" value=" + " name="+" onclick="answer.value += '+'"/>
+                     <br>
+            
+                     <input class="btn" type="button" value=" 4 " name="4" onclick="answer.value += '4'"/>
+                     <input class="btn" type="button" value=" 5 " name="5" onclick="answer.value += '5'"/>
+                     <input class="btn" type="button" value=" 6 " name="6" onclick="answer.value += '6'"/>
+                     <input class="btn" type="button" value=" - " name="-" onclick="answer.value += '-'"/>
+                     <br>
+          
+                     <input class="btn" type="button" value=" 7 " name="7" onclick="answer.value += '7'"/>
+                     <input class="btn" type="button" value=" 8 " name="8" onclick="answer.value += '8'"/>
+                     <input class="btn" type="button" value=" 9 " name="9" onclick="answer.value += '9'"/>
+                     <input class="btn" type="button" value=" x " name="x" onclick="answer.value += '*'"/>
+                     <br>
+
+                     <input class="btn" type="button" value=" c " name=" " onclick="answer.value = ''"/>
+                     <input class="btn" type="button" value=" 0 " name="0" onclick="answer.value += '0'"/>
+                     <button class="btn" type='submit'> = </button>
+                     <input class="btn" type="button" value=" / " name="/" onclick="answer.value += '/'"/>
+                     <br>
+                </form>
+            </div>
+        </div>
+    </center>      
+</body>
+</html>
+
+<!--
+
+	  margin-top: 70px;
+  width: 220px;
+  height: 300px;
+  background-color: #ffff;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0 5px 10px #888888;
